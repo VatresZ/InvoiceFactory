@@ -23,7 +23,7 @@ public class InitTest {
 	// definise Before uslove
 	@AfterSuite
 	public void tearDown() {
-		driver.close();
+//		driver.close();
 	}
 
 }

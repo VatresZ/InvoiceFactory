@@ -36,7 +36,7 @@ public class LoginTest extends InitTest {
 	public void test2() throws InterruptedException {
 		logPage = new LoginPage(driver);
 
-		logPage.fillData("zoranvatres@gmail.com", "");
+		logPage.fillData("test@gmail.com", "");
 		logPage.logIn();
 		// verifikacija sistemski alert
 		assertTrue(logPage.isPassMsgPresent());
@@ -56,7 +56,7 @@ public class LoginTest extends InitTest {
 	@Test(priority = 3)
 	public void test4() {
 		logPage = new LoginPage(driver);
-		logPage.fillData("зоранватрес@гмаил.цом", "qwe123");
+		logPage.fillData("тест@гмаил.цом", "qwe123");
 		logPage.logIn();
 		// verifikacija sistemski alert
 
@@ -66,7 +66,7 @@ public class LoginTest extends InitTest {
 	@Test(priority = 4)
 	public void test5() {
 		logPage = new LoginPage(driver);
-		logPage.fillData("zoranvatres@gmail.com", "љве123");
+		logPage.fillData("test@gmail.com", "љве123");
 		logPage.logIn();
 		// verifikacija sistemski alert
 
@@ -76,7 +76,7 @@ public class LoginTest extends InitTest {
 	@Test(priority = 5)
 	public void test6() throws InterruptedException {
 		logPage = new LoginPage(driver);
-		logPage.fillData("zoranvatres@gmail.co", "");
+		logPage.fillData("test@gmail.co", "");
 		logPage.logIn();
 		// verifikacija
 		assertTrue(logPage.isPassMsgPresent());
@@ -86,7 +86,7 @@ public class LoginTest extends InitTest {
 	@Test(priority = 6)
 	public void test7() {
 		logPage = new LoginPage(driver);
-		logPage.fillData("zoranvatres@gmail.com", "qwe1");
+		logPage.fillData("test@gmail.com", "qwe1");
 		logPage.logIn();
 		// verifikacija
 		assertTrue(logPage.isPassMsgPresent());
@@ -96,7 +96,7 @@ public class LoginTest extends InitTest {
 	@Test(priority = 7)
 	public void test8() {
 		logPage = new LoginPage(driver);
-		logPage.fillData("ζορανωατρεσ@γμαιλ.ψομ", "qwe123");
+		logPage.fillData("τεστ@γμαιλ.ψομ", "qwe123");
 		logPage.logIn();
 		// verifikacija sistemski alert
 	}
@@ -105,7 +105,7 @@ public class LoginTest extends InitTest {
 	@Test(priority = 8)
 	public void test9() {
 		logPage = new LoginPage(driver);
-		logPage.fillData("zoranvatres@gmail.com", ";ςε123");
+		logPage.fillData("test@gmail.com", ";ςε123");
 		logPage.logIn();
 		// verifikacija sistemski alert
 
@@ -115,7 +115,7 @@ public class LoginTest extends InitTest {
 	@Test(priority = 9)
 	public void test10() {
 		logPage = new LoginPage(driver);
-		logPage.fillData("ئخقشىرشفقثس@لةشهمزؤخة", "qwe123");
+		logPage.fillData("ئفثسف@لةشهمزؤخة", "qwe123");
 		logPage.logIn();
 		// verifikacija
 		assertTrue(logPage.isEmailMsgPresent());
@@ -125,7 +125,7 @@ public class LoginTest extends InitTest {
 	@Test(priority = 10)
 	public void test11() {
 		logPage = new LoginPage(driver);
-		logPage.fillData("zoranvatres@gmail.com", "ضصث123");
+		logPage.fillData("test@gmail.com", "ضصث123");
 		logPage.logIn();
 		// verifikacija sistemski alert
 
@@ -137,7 +137,7 @@ public class LoginTest extends InitTest {
 	public void test12() {
 		logPage = new LoginPage(driver);
 		bordPage = new BordPage(driver);
-		logPage.fillData("zoranvatres@gmail.com", "qwe123");
+		logPage.fillData("test@gmail.com", "qwe123");
 		logPage.logIn();
 
 		// verifikacija uspesnog logovanja sa BordPage uzeta verifikacija log user-a

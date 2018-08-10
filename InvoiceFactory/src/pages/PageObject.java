@@ -19,4 +19,5 @@ public class PageObject {
 		// Inicijalizujemo def. drajver
 		PageFactory.initElements(driver, this);
 	}
+
 }
